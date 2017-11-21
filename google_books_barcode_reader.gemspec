@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "google_books_barcode_reader"
   spec.version       = GoogleBooksBarcodeReader::VERSION
   spec.authors       = ["Victor Velazquez"]
-  spec.email         = ["velazquezgaspar16@hotmail.com"]
+  spec.email         = ["velazquezgaspar16@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{Scan books barcode and search from google books}
+  spec.description   = %q{This gems is a wrapper of ISBN, ZBAR and GoogleBooks that allow scan books barcode.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
@@ -31,6 +31,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "isbn"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "zbar"
 end
