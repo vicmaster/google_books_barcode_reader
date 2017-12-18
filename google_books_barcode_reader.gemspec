@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Scan books barcode and search from google books}
   spec.description   = %q{This gems is a wrapper of ISBN, ZBAR and GoogleBooks that allow scan books barcode.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/vicmaster/google_books_barcode_reader"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
