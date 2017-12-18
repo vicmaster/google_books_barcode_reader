@@ -2,8 +2,12 @@ require 'zbar'
 
 module GoogleBooksBarcodeReader
   class Barcode
-    def scan(picture)
-      barcode = ZBar::Image.from_jpeg(File.read(picture)).process
+    def initialize(term)
+      @term = term
+    end
+
+    def scan
+      barcode = ZBar::Image.from_jpeg(File.read(@term)).process
       return barcode.first.data unless barcode.empty?
     end
   end
